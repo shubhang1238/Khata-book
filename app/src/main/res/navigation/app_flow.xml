@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_flow"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.billbook.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_home2"
+            app:destination="@id/home2"
+            app:popUpTo="@id/home2"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.billbook.home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_bills"
+            app:destination="@id/bills"
+            app:popUpTo="@id/bills"/>
+        <action
+            android:id="@+id/action_home2_to_login"
+            app:destination="@id/login"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/bills"
+        android:name="com.example.billbook.bills"
+        android:label="fragment_bills"
+        tools:layout="@layout/fragment_bills" >
+        <action
+            android:id="@+id/action_bills_to_bill1"
+            app:destination="@id/bill" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.billbook.register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/bill"
+        android:name="com.example.billbook.bill"
+        android:label="fragment_bill"
+        tools:layout="@layout/fragment_bill" >
+        <argument
+            android:name="date"
+            app:argType="string"
+            android:defaultValue="date" />
+    </fragment>
+</navigation>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "799201914340",
+    "project_id": "bill-book-b20f3",
+    "storage_bucket": "bill-book-b20f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799201914340:android:d082492e29d3ec0535abf1",
+        "android_client_info": {
+          "package_name": "com.example.billbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799201914340-p8ecemqk8mo956765kclg0m7366dtl9n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.billbook",
+            "certificate_hash": "469e78686b66ffbf86aa80fe93688a15589ef8f9"
+          }
+        },
+        {
+          "client_id": "799201914340-v9susoql65r04slivdvo64evdsgps71d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxvvtLApi-MCS4IrDTmEgiO1_BLmuShg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799201914340-v9susoql65r04slivdvo64evdsgps71d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
